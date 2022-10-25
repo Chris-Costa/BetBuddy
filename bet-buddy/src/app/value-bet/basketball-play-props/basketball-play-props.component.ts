@@ -7,10 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./basketball-play-props.component.css']
 })
 export class BasketballPlayPropsComponent {
-
+  
   constructor(private router: Router) { }
 
   back(){
     this.router.navigate(['/value-bet'])
   }
 }
+
+//https://www.nba.com/schedule?cal=all&region=1
