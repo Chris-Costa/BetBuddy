@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { ValueBetComponent } from './value-bet/value-bet.component';
@@ -26,6 +27,7 @@ import { FootballPlayerPropsComponent } from './value-bet/football-player-props/
     BrowserModule,
     MatMenuModule,
     BrowserAnimationsModule,
+    MatButtonModule,
     RouterModule.forRoot([
       {path: 'value-bet', component: ValueBetComponent},
       {path: 'basketball-player-props', component: BasketballPlayPropsComponent},

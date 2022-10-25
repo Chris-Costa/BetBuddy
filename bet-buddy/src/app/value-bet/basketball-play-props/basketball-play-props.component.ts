@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-basketball-play-props',
   templateUrl: './basketball-play-props.component.html',
   styleUrls: ['./basketball-play-props.component.css']
 })
-export class BasketballPlayPropsComponent implements OnInit {
+export class BasketballPlayPropsComponent {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  back(){
+    this.router.navigate(['/value-bet'])
   }
-
 }

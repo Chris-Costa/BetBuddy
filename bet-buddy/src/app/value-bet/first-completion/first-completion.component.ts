@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-first-completion',
   templateUrl: './first-completion.component.html',
   styleUrls: ['./first-completion.component.css']
 })
-export class FirstCompletionComponent implements OnInit {
+export class FirstCompletionComponent {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  back(){
+    this.router.navigate(['/value-bet'])
   }
-
 }

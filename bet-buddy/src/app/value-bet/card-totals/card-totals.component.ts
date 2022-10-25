@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-totals',
   templateUrl: './card-totals.component.html',
   styleUrls: ['./card-totals.component.css']
 })
-export class CardTotalsComponent implements OnInit {
+export class CardTotalsComponent {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  back(){
+    this.router.navigate(['/value-bet'])
   }
-
 }
