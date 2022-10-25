@@ -1,0 +1,9 @@
+<div class="marketButton" >
+    <button class="select" mat-button [matMenuTriggerFor]="menu">Select Market</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="basketball()">Basketball Player Props</button>
+        <button mat-menu-item (click)="football()">Football Player Props</button>
+        <button mat-menu-item (click)="completions()">First Pass Completions</button>
+        <button mat-menu-item (click)="cards()">Card Totals</button>
+    </mat-menu>
+</div>
